@@ -9,7 +9,6 @@ function ParseFidelityTransactions()
   var AMOUNT_COL = 11;
   var row = 1;
   var sheet = SpreadsheetApp.getActiveSheet();
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("History_for_Account_X90980514");
   var nextRow = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(VAR_SHEET_NAME).getRange(NEXT_PARSE_ROW, PARSE_VAR_COL).getValue();
   var nextDate = new Date(sheet.getRange(nextRow, DATE_COL).getValue());
   if (nextDate.toString() != "Invalid Date")
